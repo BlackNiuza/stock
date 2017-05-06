@@ -13,6 +13,7 @@
         <java.version>1.8</java.version>
         <scala.encoding>2.11.3</scala.encoding>
         <spark.version>2.1.0</spark.version>
+        <hadoop.version>2.7.3</hadoop.version>
     </properties>
 
     <dependencies>
@@ -47,6 +48,11 @@
             <artifactId>guava</artifactId>
             <version>21.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.apach.httpclient</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.1</version>
+        </dependency>
 
         <!--spark-->
         <dependency>
@@ -67,6 +73,15 @@
             <version>${spark.version}</version>
             <scope>${spark.scope}</scope>
         </dependency>
+
+        <!--hdfs-->
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>${hadoop.version}</version>
+            <scope>${spark.scope}</scope>
+        </dependency>
+
 
         <!--test-->
         <dependency>

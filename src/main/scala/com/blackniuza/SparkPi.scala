@@ -1,6 +1,7 @@
 package com.blackniuza
 
 import org.apache.spark.sql.SparkSession
+import org.apache.spark.SparkContext._
 
 import scala.math.random
 
